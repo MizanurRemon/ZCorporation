@@ -53,11 +53,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.bottomNav.onItemReselected = {
-            if (it == 0) {
-                showToast("movies")
-            } else if (it == 1) {
-                showToast("tv")
-            }
+            val msg = "You are on the current page"
+
+            showToast(msg)
         }
     }
 
@@ -66,39 +64,9 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    /*override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.nav_menu, menu)
-        return true
-    }*/
-
-    /*override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.nav_movies -> {
-                showToast("moview")
-            }
-
-            R.id.nav_tv -> {
-                showToast("tv")
-            }
-
-
-        }
-        return super.onOptionsItemSelected(item)
-    }*/
-
 
     private fun showToast(msg: String) {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
     }
 
-    /*private fun setupSmoothBottomMenu() {
-        val popupMenu = PopupMenu(this, null)
-        popupMenu.inflate(R.menu.nav_menu)
-        val menu = popupMenu.menu
-        //binding.bottomNav.setupWithNavController(menu);
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        return navController.navigateUp() || super.onSupportNavigateUp()
-    }*/
 }
