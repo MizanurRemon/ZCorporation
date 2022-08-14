@@ -56,7 +56,7 @@ class Fragment_movies : Fragment() {
                     binding.itemView.apply {
                         setHasFixedSize(true)
                         layoutManager = GridLayoutManager(activity, 1)
-                        adapter = Movie_adapter(response.body()!!.results)
+                        adapter = Movie_adapter(response.body()!!.results) // passing result list into adapter
                     }
                 }
             }
