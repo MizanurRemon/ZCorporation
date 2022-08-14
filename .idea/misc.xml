@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/gradient_overlay.xml" value="0.1115" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/layout/fragment_movies.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/layout/fragment_tv.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/movie_card.xml" value="0.22" />
         <entry key="app/src/main/res/menu/nav_menu.xml" value="0.19791666666666666" />
       </map>
     </option>
